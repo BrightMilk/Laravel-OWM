@@ -1,0 +1,33 @@
+{
+    "name": "brightmilk/laravel-owm",
+    "description": "Laravel wrapper for OpenWeatherMap",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Artem Medyanik",
+            "email": "artem.medyanik@outlook.com",
+            "homepage": "https://github.com/BrightMilk",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.1",
+        "laravel/helpers": "^1.1.1",
+        "cmfcmf/openweathermap-php-api": "^3.2.0",
+        "http-interop/http-factory-guzzle": "^1.0",
+        "php-http/guzzle6-adapter": "^2.0 || ^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "BrightMilk\\LaravelOWM\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "BrightMilk\\LaravelOWM\\LaravelOWMServiceProvider"
+            ]
+        }
+    }
+}
